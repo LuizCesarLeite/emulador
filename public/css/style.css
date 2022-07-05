@@ -1,0 +1,247 @@
+.container {
+    max-width: 1100px;
+}
+
+.titulo {
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.texto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.texto-18 {
+    font-size: 18px;
+}
+
+.texto-16 {
+    font-size: 16px;
+}
+
+.logo-botike {
+    width: 143px;
+}
+
+.nav-link {
+    color: #e40246 !important;
+    font-size: 18px;
+    padding-right: .6rem !important;
+    padding-left: .6rem !important;
+}
+
+.nav-link:hover {
+    color: #9a1850 !important;
+}
+
+
+/* .img-animation{
+    width: 400px;
+} */
+
+.fdoImage {
+    height: 700px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.img-animation {
+    max-width: 400px;
+}
+
+.titulo-header {
+    color: #e40246 !important;
+    font-size: 2rem;
+    background: white;
+    border-radius: 50px;
+    padding: 10px 40px;
+}
+
+.titulo-section {
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.titulo-features {
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.feats {
+    width: 290px;
+}
+
+.text-lightcarmesin {
+    color: #ed789b;
+}
+
+.text-padrao {
+    color: #6b6b6b;
+}
+
+.text-cinza-claro {
+    color: #6b6b6b;
+}
+
+.text-cinza-escuro {
+    color: #282828;
+}
+
+.box-descricao-como-fazemos {
+    padding-left: 1rem;
+}
+
+.box-descricao-como-fazemos ul {
+    padding-left: 1rem;
+}
+
+.artigo {
+    max-width: 315px;
+    background-color: #ffffff;
+    min-height: 408px;
+}
+
+.artigo div {
+    padding: 20px;
+}
+
+.artigo div .titulo-artigo {
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #e40246;
+}
+
+.artigo div .text-artigo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6b6b6b;
+}
+
+.btn-vermais {
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 24px;
+    color: #ffffff !important;
+    background: #545353;
+}
+
+.btn-vermais .fa-chevron-right {
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+.btn-vermais:hover {
+    background-color: #a8a8a8;
+}
+
+.btn-vermais:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(168, 168, 168, 0.4);
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 13px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #e40246 !important;
+}
+
+.slick-slide {
+    outline: none !important;
+}
+
+.abre-menu {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 11;
+    width: 25px;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    border: 0;
+}
+
+.abre-menu .barra-menu {
+    height: 4px;
+    width: 100%;
+    margin: 6px auto;
+    display: block;
+    background-color: #e40246;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.abre-menu.collapsed .barra-menu {
+    background-color: #e40246!important;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-botike {
+        width: 101px;
+    }
+    .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .fdoImage {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+    .img-animation {
+        width: 100%;
+    }
+    .titulo-header {
+        font-size: 24px;
+        background: white;
+        border-radius: 15px;
+        padding: 12px 15px;
+    }
+    .feats {
+        width: 100%;
+        max-width: 90%;
+    }
+    .text-padrao {
+        padding-left: 1.5em;
+        max-width: 90%;
+    }
+    .box-descricao-como-fazemos {
+        max-width: 500px;
+    }
+    .box-descricao-como-fazemos ul {
+        padding-left: 1rem;
+        width: 300px
+    }
+    .box-items-menu {
+        padding: 15px 30px;
+        background-color: #e4e3df;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 95%;
+    }
+    .box-descricao-como-fazemos ul {
+        padding-left: 2rem;
+    }
+    .text-padrao {
+        padding-left: 0;
+        max-width: 100%;
+    }
+}
