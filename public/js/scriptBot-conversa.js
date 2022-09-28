@@ -66,15 +66,15 @@ const pegaMensagemBPInsertaTemplate = async(textEn_viado) => {
             console.log(JSON.stringify(retorno2));
             var lista = retorno2.responses;
 
+            for (var i = 0; i < lista.length; i++) {
+                element = lista[i];
+                
             if (!lista) {
                 console.log('rolou lista não')
                 return
             };
 
-            for (var i = 0; i < lista.length; i++) {
-                element = lista[i];
-
-             if (element.type == 'demorinha') {
+            if (element.type == 'demorinha') {
                 const template = templateDelay('bp');
                 injetaTemplatenoChat(template);
 

@@ -173,13 +173,19 @@ const templateLocaliza = function(localNome, localEnder, localLatid, localLongit
 // Template dos choices
 //
 
+// Enter!
+const confirmaChoiceBotaoClick = (botaoValue) => {
+  console.log(botaoValue);
+  tdb(botaoValue);
+}
+
 // Monta uma escolha
 const templateItem = function(choices) {
   var _id_ = makeSessionID(5);
   var objectId = `escolhas_${_id_}`
   var ret = '';
   ret = `
-  <input type="button" name="${objectId}" id="${objectId}" value="${choices.value}" /><br/>
+  <input type="button" name="${objectId}" id="${objectId}" value="${choices.value}" onClick="confirmaChoiceBotaoClick('${choices.value}')"/> <br/>
   `;
   return ret;
 };
@@ -239,7 +245,7 @@ const templateMaisOptsDrop = (maisOptions, botao_drop) => {
   });
   ret_ += `</select>`;
   ret_ += `<br/>`;
-  ret_ += `${templateConfirmaDrop(objectId, botao_drop)}`;
+  ret_ += `${templateBotaoConfirmaDrop(objectId, botao_drop)}`;
   return ret_;
 };
 
@@ -260,7 +266,7 @@ const templateDrop = function(chicotAtomico, from) {
 };
 
 // Lógica do enter
-const templateConfirmaDrop = (dropName, butaum_caption) => {
+const templateBotaoConfirmaDrop = (dropName, butaum_caption) => {
   var _id_ = makeSessionID(5);
   var objectId = `button_${_id_}`
   var ret_ = `<input type="button" name="${objectId}" id="${objectId}" value="${butaum_caption}" onClick="confirmaDropClick('${dropName}')"/>`;
@@ -280,13 +286,19 @@ const confirmaDropClick = (dropName) => {
 // Template card
 //
 
+// Enter!
+const confirmaCardBotaoClick = (botaoValue) => {
+  console.log(botaoValue);
+  tdb(botaoValue);
+}
+
 // Monta um botão
 const templateBotaoCard = function(actions) {
   var _id_ = makeSessionID(5);
   var objectId = `escolhas_${_id_}`
   var ret = '';
   ret = `
-  <input type="button" name="${objectId}" id="${objectId}" value="${actions.title}" /><br/>
+  <input type="button" name="${objectId}" id="${objectId}" value="${actions.title}" onClick="confirmaCardBotaoClick('${actions.title}')"/><br/>
   `;
   return ret;
 };
