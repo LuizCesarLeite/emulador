@@ -42,11 +42,11 @@ const injetaTemplatenoChat = (template) => {
 };
 
 // Feel the magic :-)
-const pegaMensagemBPInsertaTemplate = async() => {
+const pegaMensagemBPInsertaTemplate = async(textEn_viado) => {
     const uri = "http://localhost:4682/falauser/";
 
     const payload = {
-        "text": textInput.value,
+        "text": textEn_viado,
         "sessionID": sessionID,
     };
 
@@ -65,6 +65,11 @@ const pegaMensagemBPInsertaTemplate = async() => {
             // console.log('retorno2', retorno2);
             console.log(JSON.stringify(retorno2));
             var lista = retorno2.responses;
+
+            if (!lista) {
+                console.log('rolou lista não')
+                return
+            };
 
             for (var i = 0; i < lista.length; i++) {
                 element = lista[i];
