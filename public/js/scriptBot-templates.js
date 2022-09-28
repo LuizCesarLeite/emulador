@@ -273,12 +273,7 @@ const confirmaDropClick = (dropName) => {
   // var selectedValue = select.options[select.selectedIndex].value;
   var selectedValue = select.options[select.selectedIndex].label;
   console.log(selectedValue);
-  var textInput = document.getElementById('textInput');
-  textInput.value = selectedValue;
-  var ke = new KeyboardEvent('keydown', {
-    'code':13,
-  });
-  textInput.dispatchEvent(ke);
+  tdb(selectedValue);
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
